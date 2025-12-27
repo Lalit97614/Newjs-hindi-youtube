@@ -23,10 +23,10 @@ const myArr2 = new Array(1,2,3,4,5)
 // console.log(myArr.indexOf(6))
 
 
-// const newArr= myArr.join()
-// console.log(myArr)
-// console.log(newArr)
-// console.log(typeof(newArr))
+const newArr= myArr.join()
+console.log(myArr)
+console.log(newArr)
+console.log(typeof(newArr))
 
 
 
