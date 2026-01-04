@@ -38,9 +38,17 @@ const books=[
         title:"Books four",genre:"English",publish:2009,edition:2016
     }
 ]
-const values = books.filter((item)=>{
-    if(item.genre=="English"){
-        return item;
+// const userBooks = books.filter((item)=>{
+//     if(item.genre=="English"){
+//         return item;
+//     }
+// })
+// console.log(userBooks)
+
+
+const userBooks=books.filter((item)=>{
+    if(item.publish==2009){
+        return item
     }
 })
-console.log(values)
+console.log(userBooks)
