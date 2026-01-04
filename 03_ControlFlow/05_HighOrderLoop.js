@@ -12,10 +12,10 @@
 // }
 
 //Maps 
-const map = new Map()
-map.set("IN","India")
-map.set("USA","United state of India")
-map.set("FR","France")
+// const map = new Map()
+// map.set("IN","India")
+// map.set("USA","United state of India")
+// map.set("FR","France")
 // console.log(map)
 
 // for(const [key,value] of map){
@@ -43,8 +43,22 @@ map.set("FR","France")
 // }
 
 
-const programming = ["js","rb","py","java","cpp"]
+// const programming = ["js","rb","py","java","cpp"]
 
-for(const key in programming){
-    console.log(key)
-}
+// for(const key in programming){
+//     console.log(programming[key])
+// }
+
+
+
+//Maps 
+// const map = new Map()
+// map.set("IN","India")
+// map.set("USA","United state of India")
+// map.set("FR","France")
+
+// for (const key in map) {
+//     console.log(key)        //not working
+// }
+
+
