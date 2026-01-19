@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <!-- State 0 - UNSENT: The request is not initialized. This is the state before the open() method is called.
+
+State 1 - OPENED: The open() method has been invoked. At this point, the request has been set up, but not sent.
+
+State 2 - HEADERS_RECEIVED: The send() method has been called, and the headers and status are available. The request has been sent, and the server response is being received.
+
+State 3 - LOADING: The request is in process, and the responseText property contains the interim data. It's downloading the response from the server.
+
+State 4 - DONE: The operation is complete. The entire response from the server has been received, and the data transfer is either successful or failed. -->
+
+</body>
+<script>
+    const requestUrl="https://api.github.com/users/Lalit97614"
+    const xhr=new XMLHttpRequest()
+    xhr.onreadystatechange=function(){
+       console.log(xhr.readyState);
+       if(xhr.readyState===4)  {
+        const data = JSON.parse(this.responseText)
+        console.log(data)
+        console.log(typeof data);
+        console.log(data.login)
+       }
+    }
+    xhr.open("GET",requestUrl)
+    xhr.send()
+</script>
+</html>
